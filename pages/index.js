@@ -8,6 +8,7 @@ export default function Home() {
       <Head>
         <title>Magic the Gathering | Home</title>
         <meta name="keywords" content="rules"/>
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"></link>
         <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=G-C15VS54KZ6`}
