@@ -28,7 +28,7 @@ const Display = (props) => {
     if (newSearch){
         return <Rule rule={rule}/>
     } else {
-        /* Determine which class to be displayed of based on the lenght of rule id.
+        /* Determine which class to be displayed of based on the length of rule id.
         Not optimal because we need to know the exact format of rule id.
         For example, 
             "1. Game Concepts" is Section
