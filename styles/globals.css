@@ -9,6 +9,14 @@ a {
   color: #333;
   text-decoration: none;
 }
+a:hover {
+  color: #4979ff;
+  text-decoration: underline;
+}
+a:active {
+  color: #4979ff;
+  text-decoration: underline;
+}
 .content {
   max-width: 960px;
   margin: 0 auto;
@@ -42,3 +50,10 @@ footer {
   color: #4979ff;
   text-decoration: underline;
 }
+
+input {
+  background: #fff;
+  color: #777;
+  border: 1px solid #777;
+}
+
