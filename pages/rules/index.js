@@ -1,4 +1,4 @@
-import getRules from '../lib/util'
+import getRules from '../api/util'
 import Filter from '../../comps/Filter'
 import Display from '../../comps/Display'
 import React, { useState, useEffect } from 'react'
