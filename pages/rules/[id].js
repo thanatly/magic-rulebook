@@ -1,4 +1,4 @@
-import getRules from '../api/util'
+import getRules from '../lib/util'
 import styles from '../../styles/Home.module.css'
 
 export const getStaticPaths = async () => {
