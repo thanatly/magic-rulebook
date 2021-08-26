@@ -1,5 +1,7 @@
 import getRules from '../api/util'
 import styles from '../../styles/Home.module.css'
+import React, { useEffect } from 'react';
+
 
 export const getStaticPaths = async () => {
   const data = await getRules()
@@ -57,6 +59,17 @@ export const getStaticProps = async (context) => {
 }
 
 const Details =  ({ rule }) => {
+
+  useEffect(() => {
+  // To implement - in text hyperlink
+  // slice rules into words with " " spacer
+  // look through all words in rule.rules.text
+  // If a word contains number, add hyperlink
+  // If not, return as it is
+  // link words togehter with " " spacer
+  // substitute into rule.rules
+  })
+
   return (<div>
           <h3 className={styles.single}> {rule.chap_id}) {rule.chap_title}</h3>
           {rule.rules.map(rule => 

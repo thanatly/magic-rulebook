@@ -11,7 +11,7 @@ export const getStaticProps = async () => {
   }
 }
 
-const Ninjas = ({ rules }) => {
+const Rulebook = ({ rules }) => {
   const [ newSearch, setNewSearch ] = useState('')
 
   const handleSearch = (event) => {
@@ -36,4 +36,4 @@ const Ninjas = ({ rules }) => {
   );
 }
  
-export default Ninjas;
+export default Rulebook;
