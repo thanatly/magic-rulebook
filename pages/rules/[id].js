@@ -45,9 +45,9 @@ export const getStaticProps = async (context) => {
     ]
   }
   */
-  var rules_only = rules.filter(rule => String(rule.id).startsWith(chap.id+'.'))
+  const rules_only = rules.filter(rule => String(rule.id).startsWith(chap.id+'.'))
 
-  var show ={
+  const show ={
     chap_id : chap.id,
     chap_title : chap.text,
     rules: rules_only

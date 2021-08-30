@@ -9,8 +9,9 @@ export default async function getRules() {
     response = response.split("\r\n\r\nGlossary")[0]
     response = response.split("\r\n\r\n")
 
-    var rules =[]
+    const rules =[]
 
+    //use map instead of for loop
     for (const item of response) {
         const rule ={
           id : item.substr(0,item.indexOf(' ')).replace(/\.$/, ""),
@@ -18,6 +19,12 @@ export default async function getRules() {
         }      
         rules.push(rule) 
     }
+
+    /*
+    let mapped_rules = response.map( r = {
+      return r
+    })
+    */
 
     /* Return as rules = [
       {
